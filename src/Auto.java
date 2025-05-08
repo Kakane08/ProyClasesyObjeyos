@@ -3,7 +3,7 @@ public class Auto {
 
   //Atributos.
   private int id;
-  private String marca;
+  private Marca marca;
   private String modelo;
   private int anio;
   private String color;
@@ -13,13 +13,13 @@ public class Auto {
   //Constructor, siempre son publicos por defecto.
   public Auto(){}
 
-  public Auto(String marca, String modelo, String dominio){
+  public Auto(Marca marca, String modelo, String dominio){
     this.marca = marca;
     this.modelo = modelo;
     this.dominio = dominio;
   }
 
-  public Auto(int id, String marca, String modelo, int  anio, String color, String dominio, double valor){
+  public Auto(int id, Marca marca, String modelo, int  anio, String color, String dominio, double valor){
     this.id=id;
     this.marca=marca;
     this.modelo=modelo;
