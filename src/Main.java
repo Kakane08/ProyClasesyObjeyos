@@ -5,6 +5,12 @@ public class Main {
 
     Marca marca1=new Marca(1, "Citroen");
     Marca marca2=new Marca(2, "Renault");
+    Marca marca3=new Marca();
+    System.out.println(marca3.toString());
+    marca3.setNomMarca("VM");
+    marca3.setId(3);
+    System.out.println(marca3.toString());
+
 
     //Crear obj instancia auto.
     //Uso el operado new para crear la instancia de ese objeto.
@@ -13,7 +19,6 @@ public class Main {
 
 
     Auto auto1 = new Auto();
-
     System.out.println(auto1.mostrarDatos());
 
     Auto auto2 = new Auto(marca1, "C4", "AG654MM");

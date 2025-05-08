@@ -10,8 +10,10 @@ public class Auto {
   private String dominio;
   private double valor;
 
-  //Constructor, siempre son publicos por defecto.
-  public Auto(){}
+  //Constructor, siempre son públicos por defecto.
+  public Auto(){
+    this.marca=new Marca();
+  }
 
   public Auto(Marca marca, String modelo, String dominio){
     this.marca = marca;
@@ -27,8 +29,20 @@ public class Auto {
     this.color=color;
     this.dominio=dominio;
     this.valor=valor;
+  }
 
+  public void setId(int id){
+    this.id=id;
+  }
+  public int getId() {
+    return this.id;
+  }
 
+  public void setMarca(Marca marca){
+    this.marca=marca;
+  }
+  public Marca getMarca(){
+    return  this.marca;
   }
 
    //Métodos.
@@ -43,6 +57,7 @@ public class Auto {
         "Valor $  " +  valor;
     return datos;
   }
+
 
 
 
