@@ -45,6 +45,40 @@ public class Auto {
     return  this.marca;
   }
 
+  public void setModelo(String modelo){
+    this.modelo=modelo;
+  }
+  public String getModelo(){
+    return this.modelo;
+  }
+  public void setAnio(int anio){
+    this.anio=anio;
+  }
+  public int getAnio(){
+    return this.anio;
+  }
+
+  public void setColor(String color){
+    this.color=color;
+  }
+  public String getColor(){
+    return this.color;
+  }
+
+  public void setDominio(String dominio){
+    this.dominio=dominio;
+  }
+  public String getDominio(){
+    return this.dominio;
+  }
+
+  public void setValor(double valor){
+    this.valor=valor;
+  }
+  public double getValor(){
+    return this.valor;
+  }
+
    //Métodos.
   public String mostrarDatos(){
 

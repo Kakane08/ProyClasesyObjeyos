@@ -17,9 +17,21 @@ public class Main {
     //Cada vez que se usa el operador nwe, llamamos a un método constructor.
     //Son los que tienen el mismo nombre de la clase y se ejecutan cada vez que ejecuta.
 
-
     Auto auto1 = new Auto();
+    //   System.out.println(auto1.mostrarDatos() );
+    auto1.setId(1);
+    auto1.setMarca(marca3);
+    auto1.setModelo("Gol");
+    auto1.setColor("Gris");
+    auto1.setAnio(2018);
+    auto1.setDominio("AC555KK");
+    auto1.setValor(12000000);
     System.out.println(auto1.mostrarDatos());
+
+
+
+
+
 
     Auto auto2 = new Auto(marca1, "C4", "AG654MM");
     System.out.println(auto2.mostrarDatos());
